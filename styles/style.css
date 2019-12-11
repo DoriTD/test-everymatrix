@@ -78,7 +78,7 @@ aside ul li.fav {
 }
 
 aside ul li.fav::before {
-  background-image: url("/images/star.svg");
+  background-image: url("../../images/star.svg");
   background-size: 17px;
   background-color: #cad3e2;
 }
