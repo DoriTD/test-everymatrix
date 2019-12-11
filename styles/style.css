@@ -1,0 +1,619 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+aside {
+  width: 185px;
+  height: 400px;
+}
+
+aside ul {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 5px 0;
+  list-style-type: none;
+}
+
+aside ul li {
+  width: 185px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+
+aside ul li::before {
+  content: "";
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+aside ul li span,
+aside ul li a {
+  padding-left: 36px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+aside ul li.search::before {
+  background-color: #d3dbe9;
+  background-image: url("/images/searchIcon.svg");
+}
+
+aside ul li.search input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 155px;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  background-color: #e3e9f4;
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+}
+
+aside ul li.search input::-webkit-input-placeholder {
+  color: rgba(17, 71, 107, 0.4);
+  font-style: italic;
+}
+
+aside ul li.search input:-ms-input-placeholder {
+  color: rgba(17, 71, 107, 0.4);
+  font-style: italic;
+}
+
+aside ul li.search input::-ms-input-placeholder {
+  color: rgba(17, 71, 107, 0.4);
+  font-style: italic;
+}
+
+aside ul li.search input::placeholder {
+  color: rgba(17, 71, 107, 0.4);
+  font-style: italic;
+}
+
+aside ul li .expand {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+}
+
+aside ul li .expand::after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  background-color: #93a8ca;
+}
+
+aside ul li.live-events {
+  color: #ffffff;
+  background-color: #244b76;
+}
+
+aside ul li.live-events::before {
+  background-color: #20436a;
+  background-image: url("/images/play.svg");
+  background-size: 16px;
+}
+
+aside ul li.events-link {
+  background-color: #0b1a2b;
+}
+
+aside ul li.events-link::before {
+  background-color: #08121e;
+}
+
+aside ul li.events-link.football {
+  border-bottom: 1px dotted #325973;
+}
+
+aside ul li.events-link.football::before {
+  background-image: url("/images/football.svg");
+  background-size: 18px;
+}
+
+aside ul li.events-link.baschetball::before {
+  background-image: url("/images/baschetball.svg");
+  background-size: 17px;
+}
+
+aside ul li.fav {
+  background-color: #d9dfeb;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(38, 69, 112, 0.1);
+          box-shadow: 0px 2px 0px 0px rgba(38, 69, 112, 0.1);
+}
+
+aside ul li.fav::before {
+  background-image: url("/images/star.svg");
+  background-size: 17px;
+  background-color: #cad3e2;
+}
+
+aside ul li.fav::after {
+  background-color: #91a1ba;
+}
+
+aside ul li.fav span {
+  color: #264570;
+}
+
+aside ul li.fav-descr {
+  height: 51px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  background-color: #e6ebf4;
+}
+
+aside ul li.fav-descr span {
+  width: 150px;
+  padding-top: 10px;
+  padding-left: 0;
+  color: #11476b;
+  display: inline-block;
+}
+
+aside ul li.top-links {
+  background-color: #d9dfeb;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(38, 69, 112, 0.1);
+          box-shadow: 0px 2px 0px 0px rgba(38, 69, 112, 0.1);
+}
+
+aside ul li.top-links::before {
+  background-image: url("/images/topLinksIcon.svg");
+  background-size: 17px;
+  background-color: #cad3e2;
+}
+
+aside ul li.top-links::after {
+  background-color: #91a1ba;
+}
+
+aside ul li.top-links span {
+  color: #264570;
+}
+
+aside ul li.league {
+  height: 26px;
+  background-color: #e6ebf4;
+  line-height: 26px;
+}
+
+aside ul li.league a {
+  color: #11476b;
+}
+
+aside ul li.league.flag1 {
+  border-bottom: 1px dotted #325973;
+}
+
+aside ul li.league.flag1::before {
+  background-color: #d3dbe9;
+  background-image: url("/images/flag1.svg");
+  background-size: 16px;
+  height: 26px;
+}
+
+aside ul li.league.flag2::before {
+  height: 26px;
+  background-color: #d3dbe9;
+  background-image: url("/images/flag2.svg");
+  background-size: 14px;
+}
+
+main {
+  width: 710px;
+  height: 600px;
+  margin-left: 10px;
+}
+
+main .events {
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+
+main .events img {
+  width: 100%;
+  position: absolute;
+}
+
+main .events .main-container {
+  padding: 61px 5px 10px 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .events .main-container .info {
+  width: 100%;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .events .main-container .info .time,
+main .events .main-container .info .match-type {
+  font-size: 12px;
+  color: #9badd4;
+}
+
+main .events .main-container .info .time .live,
+main .events .main-container .info .match-type .live {
+  padding: 4px 7px;
+  font-family: "Roboto Condensed";
+  color: white;
+  font-weight: bold;
+  background-color: #068f00;
+}
+
+main .events .main-container .live-match {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Roboto Condensed";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+main .events .main-container .live-match .score {
+  width: 38px;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  background-color: #328dc9;
+}
+
+main .events .main-container .live-match .score span {
+  position: relative;
+  z-index: 2;
+}
+
+main .events .main-container .live-match .score::before {
+  content: "";
+  width: 100%;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(150, 150, 150, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(180deg, rgba(150, 150, 150, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+main .events .main-container .odds {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-top: 7px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto Condensed";
+}
+
+main .events .main-container .odds .odd {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 9px;
+  border: 1px solid #939da7;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #264570;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, right top, from(#dee4ee), to(#eff3f9));
+  background-image: linear-gradient(90deg, #dee4ee 0%, #eff3f9 100%);
+  -webkit-box-shadow: inset 0px -6px 2px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px -6px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+main .events .main-container .odds .odd .share {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .events .main-container .odds .team {
+  width: 37.2%;
+}
+
+main .events .main-container .odds .draw {
+  width: 25%;
+}
+
+main .slider {
+  width: 100%;
+  height: 5px;
+  margin-top: -6px;
+  margin-bottom: 26px;
+  position: relative;
+  text-align: center;
+}
+
+main .slider span {
+  width: 30px;
+  height: 4px;
+  margin: 0 5px;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #405266;
+}
+
+main .slider span.active {
+  background-color: #3cd300;
+}
+
+main .nav {
+  width: 100%;
+  position: relative;
+  margin: 17px 0 1px 0;
+}
+
+main .nav .tabs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+}
+
+main .nav .tabs .tab {
+  width: 33.2%;
+  height: 39px;
+  border-bottom: 4px solid rgba(50, 106, 143, 0.4);
+  text-align: center;
+  line-height: 32px;
+  color: #72a1c0;
+  background-color: rgba(43, 121, 173, 0.1);
+}
+
+main .nav .tabs .tab.active {
+  position: relative;
+  border-bottom: 4px solid #2a75a6;
+  color: white;
+  background-color: rgba(43, 121, 173, 0.4);
+}
+
+main .nav .tabs .tab.active::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #2a75a6;
+  margin-left: -14px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+}
+
+main .event-layout .event-header {
+  height: 30px;
+  padding: 0 0 0 10px;
+  font-size: 10px;
+  color: #72a1c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(50, 141, 201, 0.1);
+  position: relative;
+}
+
+main .event-layout .event-header .event-type {
+  padding-right: 30px;
+}
+
+main .event-layout .event-header .event-type span {
+  display: inline-block;
+  text-align: center;
+}
+
+main .event-layout .event-header .event-type .small {
+  width: 50px;
+  padding-right: 10px;
+}
+
+main .event-layout .event-header .event-type .points {
+  width: 35px;
+  padding: 0 0px;
+}
+
+main .event-layout .event-header .event-type .big {
+  width: 62px;
+  padding: 0 3px;
+}
+
+main .event-layout .event-header .grid {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  background-image: url("/images/grid.svg");
+  background-color: #194365;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+main .event-layout .event-list {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #f4f6f8;
+}
+
+main .event-layout .event-list .event-teams {
+  padding-left: 9px;
+  padding-top: 5px;
+  font-size: 12px;
+  font-family: "Roboto Condensed";
+  color: #11476b;
+}
+
+main .event-layout .event-list .event-teams .team-top,
+main .event-layout .event-list .event-teams .team-bottom,
+main .event-layout .event-list .event-teams .event-detail {
+  margin: 0;
+}
+
+main .event-layout .event-list .event-teams .event-detail {
+  font-size: 10px;
+  color: #2a75a6;
+}
+
+main .event-layout .event-list .event-btn {
+  position: relative;
+  padding-right: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  color: #264570;
+}
+
+main .event-layout .event-list .event-btn .btn {
+  width: 56px;
+  height: 38px;
+  border: 1px solid #939da7;
+  border-radius: 2px;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 38px;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#dee4ee), to(#eff3f9));
+  background-image: linear-gradient(90deg, #dee4ee 0%, #eff3f9 100%);
+  -webkit-box-shadow: inset 0px -6px 2px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px -6px 2px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+main .event-layout .event-list .event-btn .btn:hover {
+  color: white;
+  border: 1px solid #0e3a57;
+  background-image: -webkit-gradient(linear, left top, right top, from(#11476b), to(#185e8c));
+  background-image: linear-gradient(90deg, #11476b 0%, #185e8c 100%);
+  -webkit-box-shadow: inset 0px -6px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px -6px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+main .event-layout .event-list .event-btn .green {
+  width: 4px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  right: 6px;
+  line-height: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  color: #3a9221;
+}
+
+main .event-layout .event-list .event-btn .star {
+  width: 30px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  background-image: url("/images/star.svg");
+  background-color: #e7eaed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+main .event-layout .event-list .event-btn .small {
+  width: 55px;
+}
+
+main .event-layout .event-list .event-btn .big {
+  width: 60px;
+}
+
+main .event-layout .event-list .event-btn .white {
+  width: 49px;
+  height: 40px;
+  border: 1px solid #eaedf0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #f3f5f8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #102740;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

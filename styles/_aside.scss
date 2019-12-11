@@ -1,0 +1,169 @@
+aside {
+    width: 185px;
+    height: 400px;
+    ul {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0 0 5px 0;
+      list-style-type: none;
+      li {
+        width: 185px;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 30px;
+          height: 40px;
+          position: absolute;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 14px;
+        }
+        span,
+        a {
+          padding-left: 36px;
+          display: inline-block;
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 12px;
+        }
+        &.search {
+          &::before {
+            background-color: rgb(211, 219, 233);
+            background-image: url("/images/searchIcon.svg");
+          }
+          input {
+            box-sizing: border-box;
+            width: 155px;
+            height: 40px;
+            padding-left: 10px;
+            border: none;
+            background-color: rgb(227, 233, 244);
+            position: absolute;
+            right: 0;
+            font-size: 14px;
+            &::placeholder {
+              color: rgba(17, 71, 107, 0.4);
+              font-style: italic;
+            }
+          }
+        }
+        .expand {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-family: "Roboto Condensed";
+          font-weight: bold;
+          &::after {
+            content: "";
+            width: 14px;
+            height: 2px;
+            position: absolute;
+            top: 18px;
+            right: 10px;
+            background-color: #93a8ca;
+          }
+        }
+        &.live-events {
+          color: #ffffff;
+          background-color: rgb(36, 75, 118);
+          &::before {
+            background-color: #20436a;
+            background-image: url("/images/play.svg");
+            background-size: 16px;
+          }
+        }
+        &.events-link {
+          background-color: #0b1a2b;
+          &::before {
+            background-color: #08121e;
+          }
+          &.football {
+            border-bottom: 1px dotted #325973;
+            &::before {
+              background-image: url("/images/football.svg");
+              background-size: 18px;
+            }
+          }
+          &.baschetball {
+            &::before {
+              background-image: url("/images/baschetball.svg");
+              background-size: 17px;
+            }
+          }
+        }
+        &.fav {
+          background-color: #d9dfeb;
+          box-shadow: 0px 2px 0px 0px rgba(38, 69, 112, 0.1);
+
+          &::before {
+            background-image: url("/images/star.svg");
+            background-size: 17px;
+            background-color: #cad3e2;
+          }
+          &::after {
+            background-color: #91a1ba;
+          }
+          span {
+            color: rgb(38, 69, 112);
+          }
+        }
+        &.fav-descr {
+          height: 51px;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          background-color: #e6ebf4;
+
+          span {
+            width: 150px;
+            padding-top: 10px;
+            padding-left: 0;
+            color: rgb(17, 71, 107);
+            display: inline-block;
+          }
+        }
+        &.top-links {
+          background-color: #d9dfeb;
+          box-shadow: 0px 2px 0px 0px rgba(38, 69, 112, 0.1);
+
+          &::before {
+            background-image: url("/images/topLinksIcon.svg");
+            background-size: 17px;
+            background-color: #cad3e2;
+          }
+          &::after {
+            background-color: #91a1ba;
+          }
+          span {
+            color: rgb(38, 69, 112);
+          }
+        }
+        &.league {
+          height: 26px;
+          background-color: #e6ebf4;
+          line-height: 26px;
+          a {
+            color: rgb(17, 71, 107);
+          }
+          &.flag1 {
+            border-bottom: 1px dotted #325973;
+            &::before {
+              background-color: rgb(211, 219, 233);
+              background-image: url("/images/flag1.svg");
+              background-size: 16px;
+              height: 26px;
+            }
+          }
+          &.flag2 {
+            &::before {
+              height: 26px;
+              background-color: rgb(211, 219, 233);
+              background-image: url("/images/flag2.svg");
+              background-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
