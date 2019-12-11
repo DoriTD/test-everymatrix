@@ -1,9 +1,16 @@
 @import "./live-match";
 @import "./tabs";
 @import "./odds-table";
+@import "../variables";
 
 main {
   width: 710px;
   height: 600px;
   margin-left: 10px;
+  @include tablet{
+    margin-top:60px;
+    margin-left: 0px;
+    width: 100%;
+    
+  }
 }

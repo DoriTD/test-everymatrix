@@ -1,3 +1,4 @@
+@import "../variables";
 main {
   .event-layout {
     .event-header {
@@ -24,10 +25,16 @@ main {
         .points {
           width: 35px;
           padding: 0 0px;
+          @include mobile {
+            display: none;
+          }
         }
         .big {
           width: 62px;
           padding: 0 3px;
+          @include mobile {
+            display: none;
+          }
         }
       }
       .grid {
@@ -129,6 +136,9 @@ main {
         }
         .big {
           width: 60px;
+          @include mobile {
+            display: none;
+          }
         }
         .white {
           width: 49px;
@@ -137,6 +147,9 @@ main {
           box-sizing: border-box;
           box-shadow: none;
           background: #f3f5f8;
+          @include mobile {
+            display: none;
+          }
         }
       }
     }

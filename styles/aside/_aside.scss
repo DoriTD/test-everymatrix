@@ -2,10 +2,15 @@
 @import "./live-events";
 @import "./favorites";
 @import "./top-links";
+@import "../variables";
 
 aside {
   width: 185px;
   height: 400px;
+  @include tablet {
+    position: fixed;
+    width: 100%;
+  }
   ul {
     box-sizing: border-box;
     padding: 0;
@@ -16,6 +21,10 @@ aside {
       height: 40px;
       line-height: 40px;
       position: relative;
+      @include tablet {
+        display: none;
+
+      }
       &::before {
         content: "";
         width: 30px;

@@ -1,5 +1,10 @@
+@import "../variables";
 aside ul li {
   &.search {
+    @include tablet {
+      display: block;
+      width: 100%;
+    }
     &::before {
       background-color: rgb(211, 219, 233);
       background-image: url("../images/searchIcon.svg");
@@ -17,6 +22,9 @@ aside ul li {
       &::placeholder {
         color: rgba(17, 71, 107, 0.4);
         font-style: italic;
+      }
+      @include tablet{
+        width: calc(100% - 30px);
       }
     }
   }
