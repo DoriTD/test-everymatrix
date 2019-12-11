@@ -35,7 +35,7 @@ main {
         height: 30px;
         position: absolute;
         right: 0;
-        background-image: url("/images/grid.svg");
+        background-image: url("../images/grid.svg");
         background-color: #194365;
         background-repeat: no-repeat;
         background-position: center;
@@ -118,7 +118,7 @@ main {
           display: inline-block;
           position: absolute;
           right: 0;
-          background-image: url("/images/star.svg");
+          background-image: url("../images/star.svg");
           background-color: #e7eaed;
           background-repeat: no-repeat;
           background-position: center;

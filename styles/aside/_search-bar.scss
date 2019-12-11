@@ -2,7 +2,7 @@ aside ul li {
   &.search {
     &::before {
       background-color: rgb(211, 219, 233);
-      background-image: url("/images/searchIcon.svg");
+      background-image: url("../images/searchIcon.svg");
     }
     input {
       box-sizing: border-box;

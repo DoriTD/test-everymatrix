@@ -4,7 +4,7 @@ aside ul li {
     background-color: rgb(36, 75, 118);
     &::before {
       background-color: #20436a;
-      background-image: url("/images/play.svg");
+      background-image: url("../images/play.svg");
       background-size: 16px;
     }
   }
@@ -16,13 +16,13 @@ aside ul li {
     &.football {
       border-bottom: 1px dotted #325973;
       &::before {
-        background-image: url("/images/football.svg");
+        background-image: url("../images/football.svg");
         background-size: 18px;
       }
     }
     &.baschetball {
       &::before {
-        background-image: url("/images/baschetball.svg");
+        background-image: url("../images/baschetball.svg");
         background-size: 17px;
       }
     }
