@@ -1,44 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
-aside {
-  width: 185px;
-  height: 400px;
-}
-
-aside ul {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0 0 5px 0;
-  list-style-type: none;
-}
-
-aside ul li {
-  width: 185px;
-  height: 40px;
-  line-height: 40px;
-  position: relative;
-}
-
-aside ul li::before {
-  content: "";
-  width: 30px;
-  height: 40px;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 14px;
-}
-
-aside ul li span,
-aside ul li a {
-  padding-left: 36px;
-  display: inline-block;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 12px;
-}
-
 aside ul li.search::before {
   background-color: #d3dbe9;
   background-image: url("/images/searchIcon.svg");
@@ -75,23 +36,6 @@ aside ul li.search input::-ms-input-placeholder {
 aside ul li.search input::placeholder {
   color: rgba(17, 71, 107, 0.4);
   font-style: italic;
-}
-
-aside ul li .expand {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: "Roboto Condensed";
-  font-weight: bold;
-}
-
-aside ul li .expand::after {
-  content: "";
-  width: 14px;
-  height: 2px;
-  position: absolute;
-  top: 18px;
-  right: 10px;
-  background-color: #93a8ca;
 }
 
 aside ul li.live-events {
@@ -211,10 +155,60 @@ aside ul li.league.flag2::before {
   background-size: 14px;
 }
 
-main {
-  width: 710px;
-  height: 600px;
-  margin-left: 10px;
+aside {
+  width: 185px;
+  height: 400px;
+}
+
+aside ul {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 5px 0;
+  list-style-type: none;
+}
+
+aside ul li {
+  width: 185px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+
+aside ul li::before {
+  content: "";
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+aside ul li span,
+aside ul li a {
+  padding-left: 36px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+aside ul li .expand {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+}
+
+aside ul li .expand::after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  background-color: #93a8ca;
 }
 
 main .events {
@@ -599,6 +593,12 @@ main .event-layout .event-list .event-btn .white {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #f3f5f8;
+}
+
+main {
+  width: 710px;
+  height: 600px;
+  margin-left: 10px;
 }
 
 body {

@@ -1,0 +1,43 @@
+aside ul li {
+  &.top-links {
+    background-color: #d9dfeb;
+    box-shadow: 0px 2px 0px 0px rgba(38, 69, 112, 0.1);
+
+    &::before {
+      background-image: url("/images/topLinksIcon.svg");
+      background-size: 17px;
+      background-color: #cad3e2;
+    }
+    &::after {
+      background-color: #91a1ba;
+    }
+    span {
+      color: rgb(38, 69, 112);
+    }
+  }
+  &.league {
+    height: 26px;
+    background-color: #e6ebf4;
+    line-height: 26px;
+    a {
+      color: rgb(17, 71, 107);
+    }
+    &.flag1 {
+      border-bottom: 1px dotted #325973;
+      &::before {
+        background-color: rgb(211, 219, 233);
+        background-image: url("/images/flag1.svg");
+        background-size: 16px;
+        height: 26px;
+      }
+    }
+    &.flag2 {
+      &::before {
+        height: 26px;
+        background-color: rgb(211, 219, 233);
+        background-image: url("/images/flag2.svg");
+        background-size: 14px;
+      }
+    }
+  }
+}

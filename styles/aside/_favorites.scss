@@ -1,0 +1,33 @@
+aside ul li {
+  &.fav {
+    background-color: #d9dfeb;
+    box-shadow: 0px 2px 0px 0px rgba(38, 69, 112, 0.1);
+
+    &::before {
+      background-image: url("/images/star.svg");
+      background-size: 17px;
+      background-color: #cad3e2;
+    }
+    &::after {
+      background-color: #91a1ba;
+    }
+    span {
+      color: rgb(38, 69, 112);
+    }
+  }
+  &.fav-descr {
+    height: 51px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    background-color: #e6ebf4;
+
+    span {
+      width: 150px;
+      padding-top: 10px;
+      padding-left: 0;
+      color: rgb(17, 71, 107);
+      display: inline-block;
+    }
+  }
+}

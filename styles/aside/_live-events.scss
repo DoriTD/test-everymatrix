@@ -1,0 +1,30 @@
+aside ul li {
+  &.live-events {
+    color: #ffffff;
+    background-color: rgb(36, 75, 118);
+    &::before {
+      background-color: #20436a;
+      background-image: url("/images/play.svg");
+      background-size: 16px;
+    }
+  }
+  &.events-link {
+    background-color: #0b1a2b;
+    &::before {
+      background-color: #08121e;
+    }
+    &.football {
+      border-bottom: 1px dotted #325973;
+      &::before {
+        background-image: url("/images/football.svg");
+        background-size: 18px;
+      }
+    }
+    &.baschetball {
+      &::before {
+        background-image: url("/images/baschetball.svg");
+        background-size: 17px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+aside ul li {
+  &.search {
+    &::before {
+      background-color: rgb(211, 219, 233);
+      background-image: url("/images/searchIcon.svg");
+    }
+    input {
+      box-sizing: border-box;
+      width: 155px;
+      height: 40px;
+      padding-left: 10px;
+      border: none;
+      background-color: rgb(227, 233, 244);
+      position: absolute;
+      right: 0;
+      font-size: 14px;
+      &::placeholder {
+        color: rgba(17, 71, 107, 0.4);
+        font-style: italic;
+      }
+    }
+  }
+}
