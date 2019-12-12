@@ -26,7 +26,7 @@ main {
           color: rgb(155, 173, 212);
           .live {
             padding: 4px 7px;
-            font-family: "Roboto Condensed";
+            font-family: $font-condensed;
             color: rgb(255, 255, 255);
             font-weight: bold;
             background-color: #068f00;
@@ -40,7 +40,7 @@ main {
         padding: 0 10px;
         line-height: 40px;
         font-size: 18px;
-        font-family: "Roboto Condensed";
+        font-family: $font-condensed;
         display: flex;
         justify-content: space-between;
         background-color: rgba(0, 0, 0, 0.2);
@@ -87,7 +87,7 @@ main {
         line-height: 40px;
         display: flex;
         justify-content: space-between;
-        font-family: "Roboto Condensed";
+        font-family: $font-condensed;
 
         .odd {
           box-sizing: border-box;
@@ -119,11 +119,9 @@ main {
         }
         .team {
           width: 37.2%;
-
-         
         }
         .draw {
-          width: 25%;          
+          width: 25%;
         }
       }
     }

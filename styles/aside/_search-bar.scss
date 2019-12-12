@@ -23,7 +23,7 @@ aside ul li {
         color: rgba(17, 71, 107, 0.4);
         font-style: italic;
       }
-      @include tablet{
+      @include tablet {
         width: calc(100% - 30px);
       }
     }
