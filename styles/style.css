@@ -171,6 +171,7 @@ aside ul li.league.flag2::before {
 aside {
   width: 185px;
   height: 400px;
+  z-index: 2;
 }
 
 @media (max-width: 910px) {
